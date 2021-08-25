@@ -26,7 +26,7 @@ end
 def kesha_maker(array)
     newArr=[]
     array.each do|element,index|
-       if element[index] == 2
+       if element[index] == element[2]
         newArr<<  element[2]<<"$" 
        end     
        end
