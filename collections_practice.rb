@@ -16,23 +16,29 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-
-end
+    temp= array[2]
+    array[2] = array[1]
+    array[1] = temp
+    array
+  end
 def reverse_array(array)
   array.reverse
     
 end
 
 def kesha_maker(array)
-    newArr=[]
-    array.each do|element,index|
-       if element[index] == element[2]
-        newArr<<  element[2]<<"$" 
-       end     
+    newArr =[]
+    array.each do|element|
+      
+         element[2] = "$"
+       newArr<< element
+       end 
+       newArr
+       
        end
     
   
-end
+
 
 def find_a(array)
     array.select do |element|
